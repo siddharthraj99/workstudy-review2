@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useApp } from "../context/AppContext";
 
-const API = "http://localhost:8080/users";
+const API = "https://workstudy-backend.onrender.com/users";
 
 export default function AuthPages() {
   const { login } = useApp();
