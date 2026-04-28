@@ -22,7 +22,7 @@ export default function AuthPages() {
       return;
     }
     try {
-      const res = await fetch(`${API}/register`, {
+      const res = await fetch(`${API_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -46,7 +46,7 @@ export default function AuthPages() {
       return;
     }
     try {
-      const res = await fetch(`${API}/login`, {
+      const res = await fetch(`${API_URL}/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: form.email, password: form.password }),
